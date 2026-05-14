@@ -1,0 +1,37 @@
+#include "raylib.h"
+
+int main()
+{
+    InitWindow(800, 450, "basic window");
+
+    while (!WindowShouldClose())
+    {
+        BeginDrawing();
+
+        ClearBackground(RAYWHITE);
+
+        DrawRectangle(150,200,500,600,RED);
+        DrawRectangle(350,300,100,400,BROWN);
+        DrawRectangle(200,250,100,100,BLUE);
+        DrawRectangle(500,250,100,100,BLUE);
+        DrawRectangle(245,250,10,100,WHITE);
+        DrawRectangle(545,250,10,100,WHITE);
+        DrawRectangle(200,295,100,10,WHITE);
+        DrawRectangle(500,295,100,10,WHITE);
+        DrawRectangle(430,380,10,10,BLACK);
+        DrawRectangle(100,180,600,20,ORANGE);
+        DrawRectangle(150,160,500,20,ORANGE);
+        DrawRectangle(200,140,400,20,ORANGE);
+        DrawRectangle(250,120,300,20,ORANGE);
+        DrawRectangle(300,100,200,20,ORANGE);
+        DrawRectangle(350,80,100,20,ORANGE);
+        
+        
+
+        EndDrawing();
+    }
+
+    CloseWindow();
+
+    return 0;
+}
